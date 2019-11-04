@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <maxDocument message="文件池最大放多少文件句柄">
+        500
+    </maxDocument>
+</data>

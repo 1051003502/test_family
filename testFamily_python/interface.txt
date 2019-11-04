@@ -1,0 +1,29 @@
+后端接口一：
+说明：一个简单的接口，传来两个值，传回去和
+url: http://152.136.158.218:62001/get/getSum
+type: get
+data: a
+      b
+returnData  a+b
+例如 http://152.136.158.218:62001/get/getSum?a=333&b=333
+返回 666
+
+后端接口二：
+说明：判c++
+url: http://152.136.158.218:62002/post/<codeType>
+type: post
+data:  {code:"",
+        in:""
+        }
+returnData
+        "message"
+        //程序出错返回出错信息 程序正确返回输出结果
+
+
+后端接口三：
+说明：判python
+url: http://152.136.158.218:62002/post/judgepy
+
+后端接口四：
+说明：判java
+url: http://152.136.158.218:62002/post/judgejava
