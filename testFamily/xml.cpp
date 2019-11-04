@@ -7,22 +7,23 @@ bool isXml(QString data)
 {
 
     //打开或创建文件
-    QFile f1("test.xml");
-    if(!f1.open(QFile::WriteOnly))return false;
-    QTextStream in(&f1);
-    in<<data;
-    f1.close();
-    QFile file("test.xml"); //相对路径、绝对路径、资源路径都行
+//    QFile f1("test.xml");
+//    if(!f1.open(QFile::WriteOnly))return false;
+//    QTextStream in(&f1);
+//    in<<data;
+//    f1.close();
+//    QFile file("test.xml"); //相对路径、绝对路径、资源路径都行
 
-    if(!file.open(QFile::ReadOnly))return false;
+//    if(!file.open(QFile::ReadOnly))return false;
     QDomDocument doc;
-    if(!doc.setContent(&file))
+//    //if(!doc.setContent(&file))
+    if(!doc.setContent(data))
     {
-        file.close();
-        qDebug()<<"xml错误";
+        //file.close();
+        //qDebug()<<"xml错误";
         return false;
     }
-    file.close();
+    //file.close();
     return true;
 }
 Xml::Xml(QWidget *parent) :
